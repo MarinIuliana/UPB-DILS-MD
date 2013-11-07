@@ -1,0 +1,46 @@
+package com.example.keyring;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.AlertDialog.Builder;
+import android.content.DialogInterface;
+import android.text.Editable;
+import android.text.InputType;
+import android.view.Menu;
+import android.view.View;
+import android.widget.EditText;
+
+public class KeyRing extends Activity {
+	
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_key_ring);
+
+    	final EditText input = new EditText(this);
+    	input.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+        
+		Builder passDialog = new AlertDialog.Builder(KeyRing.this);
+		passDialog.setTitle("Enter your password:");
+        //.setMessage("Hello")
+        passDialog.setCanceledOnTouchOutside(false);
+        passDialog.setView(input);
+        passDialog.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int whichButton) {
+            	
+            }
+        });
+        passDialog.show();
+        
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.key_ring, menu);
+        return true;
+    }
+    
+}
