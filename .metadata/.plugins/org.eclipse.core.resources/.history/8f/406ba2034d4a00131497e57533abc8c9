@@ -1,0 +1,94 @@
+package com.example.keyring;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.AlertDialog.Builder;
+import android.app.Dialog;
+import android.content.DialogInterface;
+import android.text.InputType;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.View;
+import android.widget.EditText;
+
+public class KeyRing extends Activity {
+
+	EditText masterPass1, masterPass2;
+	String password1, password2;
+	String password;
+	
+	public void showPassDialog(){
+    	final EditText input = new EditText(this);
+    	input.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+        
+		Builder passDialog = new AlertDialog.Builder(KeyRing.this);
+		passDialog.setTitle("Enter your password:");
+        //passDialog.setMessage("Hello")
+        passDialog.setView(input);
+        passDialog.setCancelable(false);
+        passDialog.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int whichButton) {
+            	password = input.getText().toString();
+            	if(password.equals("1232"))
+            	{
+            		Log.d(password, "success");
+                }
+                else
+                {
+                    Log.d(password, "fail");
+                    AlertDialog.Builder builder = new AlertDialog.Builder(KeyRing.this);
+                    builder.setTitle("Incorrect password");
+                    builder.setMessage("The password you have entered is incorrect." + " \n \n" + "Please try again!");
+                    builder.setCancelable(false);
+                    builder.setNegativeButton("Retry", new DialogInterface.OnClickListener() {
+	                    @Override
+	                    public void onClick(DialogInterface dialog, int id) 
+	                    {
+	                    	showPassDialog();
+	                    }
+                    });
+                    builder.create().show();
+                }
+            	
+            }
+        });
+        passDialog.show();		
+	}
+	
+	public Dialog showFirstTimePassDialog(View v1, View v2) {
+      
+	    AlertDialog.Builder builder = new AlertDialog.Builder(this);
+	    LayoutInflater inflater = this.getLayoutInflater();
+
+	    builder.setView(inflater.inflate(R.layout.masterpass_setup_dialog, null))
+	           .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+	               public void onClick(DialogInterface dialog, int id) {
+	                 	masterPass1 = (EditText)findViewById(R.id.masterPassSetup1);
+	            	   	masterPass2 = (EditText)findViewById(R.id.masterPassSetup2);
+
+	            	   	password1 = masterPass1.getText().toString();
+	                	password2 = masterPass2.getText().toString();
+	               }
+	           });      
+	    return builder.create();
+	}
+	
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+    	super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_key_ring);
+        
+        showFirstTimePassDialog(masterPass1, masterPass2).show();
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.key_ring, menu);
+        return true;
+    }
+    
+}

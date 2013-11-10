@@ -3,62 +3,84 @@ package com.example.keyring;
 import android.os.Bundle;
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.AlertDialog.Builder;
+import android.app.Dialog;
 import android.content.DialogInterface;
-import android.text.InputType;
-import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.widget.EditText;
 
 public class KeyRing extends Activity {
-	
+
+	EditText masterPass1, masterPass2;
+	String password1, password2;
 	String password;
 	
-	public void showDialog(){
-    	final EditText input = new EditText(this);
-    	input.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
-        
-		Builder passDialog = new AlertDialog.Builder(KeyRing.this);
-		passDialog.setTitle("Enter your password:");
-        //passDialog.setMessage("Hello")
-        passDialog.setView(input);
-        passDialog.setCancelable(false);
-        passDialog.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int whichButton) {
-            	password = input.getText().toString();
-            	if(password.equals("1232"))
-            	{
-            		Log.d(password, "success");
-                }
-                else
-                {
-                    Log.d(password, "fail");
-                    String message = "The password you have entered is incorrect." + " \n \n" + "Please try again!";
-                    AlertDialog.Builder builder = new AlertDialog.Builder(KeyRing.this);
-                    builder.setTitle("Incorrect password");
-                    builder.setMessage(message);
-                    builder.setCancelable(false);
-                    builder.setNegativeButton("Retry", new DialogInterface.OnClickListener() {
-	                    @Override
-	                    public void onClick(DialogInterface dialog, int id) 
-	                    {
-	                    	showDialog();
-	                    }
-                    });
-                    builder.create().show();
-                }
-            	
-            }
+	public Dialog retryMasterPassSetup() {
+	    AlertDialog.Builder builder = new AlertDialog.Builder(this);
+	    LayoutInflater inflater = this.getLayoutInflater();
+	    builder.setView(inflater.inflate(R.layout.masterpass_setup_fail, null))
+	    	.setCancelable(false)
+        	.setPositiveButton("Retry", new DialogInterface.OnClickListener() {
+        		public void onClick(DialogInterface dialog, int id) {
+        			showFirstTimePassDialog().show();
+        		}
         });
-        passDialog.show();		
+	    return builder.create();
+	}
+	
+	public Dialog masterPassSetupSuccess() {
+	    AlertDialog.Builder builder = new AlertDialog.Builder(this);
+	    LayoutInflater inflater = this.getLayoutInflater();
+	    builder.setView(inflater.inflate(R.layout.masterpass_setup_successful, null))
+	    	.setCancelable(false)
+        	.setPositiveButton("Deal!", new DialogInterface.OnClickListener() {
+        		public void onClick(DialogInterface dialog, int id) {
+
+        		}
+        });
+	    return builder.create();
+	}
+	
+	public Dialog showFirstTimePassDialog() {
+		
+	    AlertDialog.Builder builder = new AlertDialog.Builder(this);
+	    LayoutInflater inflater = this.getLayoutInflater();
+
+	    builder.setView(inflater.inflate(R.layout.masterpass_setup_dialog, null))
+	    	.setCancelable(false)
+	    	.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+	    		public void onClick(DialogInterface dialog, int id) {
+	    			Dialog f = (Dialog) dialog;
+	    			
+               		masterPass1 = (EditText)f.findViewById(R.id.masterPassSetup1a);
+                	masterPass2 = (EditText)f.findViewById(R.id.masterPassSetup2a);
+                
+            	   	password1 = masterPass1.getText().toString();
+                	password2 = masterPass2.getText().toString();
+
+                	if(password1.equals(password2) &&
+                	   !password1.equals("") &&
+                	   !password2.equals(""))
+                	{
+                		//TODO
+                		masterPassSetupSuccess().show();
+                        setContentView(R.layout.activity_key_ring);
+                	}
+                	else
+                	{
+                	    retryMasterPassSetup().show();
+                	}
+               }
+           });    
+	    return builder.create();
 	}
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        showDialog();
-
     	super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_key_ring);
+        setContentView(R.layout.activity_default);
+  	
+        showFirstTimePassDialog().show();
     }
 
 
