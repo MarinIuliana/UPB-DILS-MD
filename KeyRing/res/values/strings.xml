@@ -13,5 +13,8 @@
     <string name="retype">Please retype your master password twice, identically.</string>
     <string name="success">Great, good choice!</string>
     <string name="success_description">OK, this is the first password I will remember for you. Keep in mind this is the only password you\'ll have to remember in order to gain access to all your secret notes and passwords.</string>
+    <string name="enterpass">Enter master password:</string>
+    <string name="masterpassFail">Wrong password!</string>
+    <string name="masterpassFailMessage">Please enter the correct master password!</string>
 
 </resources>
