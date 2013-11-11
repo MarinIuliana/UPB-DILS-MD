@@ -59,7 +59,8 @@ public class KeyRing extends Activity {
                 	password2 = masterPass2.getText().toString();
 
                 	if(password1.equals(password2) &&
-                	   !password1.equals(""))
+                	   !password1.equals("") &&
+                	   !password2.equals(""))
                 	{
                 		//TODO
                 		masterPassSetupSuccess().show();
