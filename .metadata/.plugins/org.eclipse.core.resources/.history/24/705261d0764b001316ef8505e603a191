@@ -169,8 +169,7 @@ public class KeyRing extends Activity {
             	   		failureCount++;
             	   		if(failureCount == 3)
             	   		{
-            	   	        File file = new File (Environment.getExternalStorageDirectory() + File.separator + "keyring.txt");
-            	   	        file.delete();
+            	   			//TODO erase the file
             	   			showFirstTimePassDialog().show();
             	   			failureCount = 0;
             	   		}

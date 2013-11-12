@@ -142,3 +142,13 @@ Java Model Exception: Java Model Status [Timed out while retrieving the attached
 
 !ENTRY com.android.ide.eclipse.adt 4 0 2013-11-11 22:41:50.806
 !MESSAGE Current file is not a match for the given config.
+!SESSION 2013-11-11 22:58:08.210 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.7.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2013-11-11 22:58:22.137
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
