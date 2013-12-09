@@ -1,0 +1,493 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B92BE7318514B0300747094 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B92BE7218514B0300747094 /* Foundation.framework */; };
+		8B92BE7518514B0300747094 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B92BE7418514B0300747094 /* CoreGraphics.framework */; };
+		8B92BE7718514B0300747094 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B92BE7618514B0300747094 /* UIKit.framework */; };
+		8B92BE7D18514B0300747094 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8B92BE7B18514B0300747094 /* InfoPlist.strings */; };
+		8B92BE7F18514B0300747094 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B92BE7E18514B0300747094 /* main.m */; };
+		8B92BE8318514B0300747094 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B92BE8218514B0300747094 /* AppDelegate.m */; };
+		8B92BE8618514B0300747094 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B92BE8418514B0300747094 /* Main_iPhone.storyboard */; };
+		8B92BE8918514B0300747094 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B92BE8718514B0300747094 /* Main_iPad.storyboard */; };
+		8B92BE8C18514B0300747094 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B92BE8B18514B0300747094 /* ViewController.m */; };
+		8B92BE8E18514B0300747094 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B92BE8D18514B0300747094 /* Images.xcassets */; };
+		8B92BE9518514B0300747094 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B92BE9418514B0300747094 /* XCTest.framework */; };
+		8B92BE9618514B0300747094 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B92BE7218514B0300747094 /* Foundation.framework */; };
+		8B92BE9718514B0300747094 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B92BE7618514B0300747094 /* UIKit.framework */; };
+		8B92BE9F18514B0300747094 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8B92BE9D18514B0300747094 /* InfoPlist.strings */; };
+		8B92BEA118514B0300747094 /* KeyRingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B92BEA018514B0300747094 /* KeyRingTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B92BE9818514B0300747094 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B92BE6718514B0300747094 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B92BE6E18514B0300747094;
+			remoteInfo = KeyRing;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8B92BE6F18514B0300747094 /* KeyRing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyRing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B92BE7218514B0300747094 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8B92BE7418514B0300747094 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8B92BE7618514B0300747094 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8B92BE7A18514B0300747094 /* KeyRing-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KeyRing-Info.plist"; sourceTree = "<group>"; };
+		8B92BE7C18514B0300747094 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8B92BE7E18514B0300747094 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8B92BE8018514B0300747094 /* KeyRing-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KeyRing-Prefix.pch"; sourceTree = "<group>"; };
+		8B92BE8118514B0300747094 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8B92BE8218514B0300747094 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8B92BE8518514B0300747094 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		8B92BE8818514B0300747094 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		8B92BE8A18514B0300747094 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8B92BE8B18514B0300747094 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8B92BE8D18514B0300747094 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8B92BE9318514B0300747094 /* KeyRingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyRingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B92BE9418514B0300747094 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8B92BE9C18514B0300747094 /* KeyRingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KeyRingTests-Info.plist"; sourceTree = "<group>"; };
+		8B92BE9E18514B0300747094 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8B92BEA018514B0300747094 /* KeyRingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyRingTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B92BE6C18514B0300747094 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B92BE7518514B0300747094 /* CoreGraphics.framework in Frameworks */,
+				8B92BE7718514B0300747094 /* UIKit.framework in Frameworks */,
+				8B92BE7318514B0300747094 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B92BE9018514B0300747094 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B92BE9518514B0300747094 /* XCTest.framework in Frameworks */,
+				8B92BE9718514B0300747094 /* UIKit.framework in Frameworks */,
+				8B92BE9618514B0300747094 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B92BE6618514B0300747094 = {
+			isa = PBXGroup;
+			children = (
+				8B92BE7818514B0300747094 /* KeyRing */,
+				8B92BE9A18514B0300747094 /* KeyRingTests */,
+				8B92BE7118514B0300747094 /* Frameworks */,
+				8B92BE7018514B0300747094 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8B92BE7018514B0300747094 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B92BE6F18514B0300747094 /* KeyRing.app */,
+				8B92BE9318514B0300747094 /* KeyRingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B92BE7118514B0300747094 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B92BE7218514B0300747094 /* Foundation.framework */,
+				8B92BE7418514B0300747094 /* CoreGraphics.framework */,
+				8B92BE7618514B0300747094 /* UIKit.framework */,
+				8B92BE9418514B0300747094 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B92BE7818514B0300747094 /* KeyRing */ = {
+			isa = PBXGroup;
+			children = (
+				8B92BE8118514B0300747094 /* AppDelegate.h */,
+				8B92BE8218514B0300747094 /* AppDelegate.m */,
+				8B92BE8418514B0300747094 /* Main_iPhone.storyboard */,
+				8B92BE8718514B0300747094 /* Main_iPad.storyboard */,
+				8B92BE8A18514B0300747094 /* ViewController.h */,
+				8B92BE8B18514B0300747094 /* ViewController.m */,
+				8B92BE8D18514B0300747094 /* Images.xcassets */,
+				8B92BE7918514B0300747094 /* Supporting Files */,
+			);
+			path = KeyRing;
+			sourceTree = "<group>";
+		};
+		8B92BE7918514B0300747094 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B92BE7A18514B0300747094 /* KeyRing-Info.plist */,
+				8B92BE7B18514B0300747094 /* InfoPlist.strings */,
+				8B92BE7E18514B0300747094 /* main.m */,
+				8B92BE8018514B0300747094 /* KeyRing-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8B92BE9A18514B0300747094 /* KeyRingTests */ = {
+			isa = PBXGroup;
+			children = (
+				8B92BEA018514B0300747094 /* KeyRingTests.m */,
+				8B92BE9B18514B0300747094 /* Supporting Files */,
+			);
+			path = KeyRingTests;
+			sourceTree = "<group>";
+		};
+		8B92BE9B18514B0300747094 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B92BE9C18514B0300747094 /* KeyRingTests-Info.plist */,
+				8B92BE9D18514B0300747094 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B92BE6E18514B0300747094 /* KeyRing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B92BEA418514B0300747094 /* Build configuration list for PBXNativeTarget "KeyRing" */;
+			buildPhases = (
+				8B92BE6B18514B0300747094 /* Sources */,
+				8B92BE6C18514B0300747094 /* Frameworks */,
+				8B92BE6D18514B0300747094 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeyRing;
+			productName = KeyRing;
+			productReference = 8B92BE6F18514B0300747094 /* KeyRing.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8B92BE9218514B0300747094 /* KeyRingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B92BEA718514B0300747094 /* Build configuration list for PBXNativeTarget "KeyRingTests" */;
+			buildPhases = (
+				8B92BE8F18514B0300747094 /* Sources */,
+				8B92BE9018514B0300747094 /* Frameworks */,
+				8B92BE9118514B0300747094 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B92BE9918514B0300747094 /* PBXTargetDependency */,
+			);
+			name = KeyRingTests;
+			productName = KeyRingTests;
+			productReference = 8B92BE9318514B0300747094 /* KeyRingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B92BE6718514B0300747094 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Student;
+				TargetAttributes = {
+					8B92BE9218514B0300747094 = {
+						TestTargetID = 8B92BE6E18514B0300747094;
+					};
+				};
+			};
+			buildConfigurationList = 8B92BE6A18514B0300747094 /* Build configuration list for PBXProject "KeyRing" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B92BE6618514B0300747094;
+			productRefGroup = 8B92BE7018514B0300747094 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B92BE6E18514B0300747094 /* KeyRing */,
+				8B92BE9218514B0300747094 /* KeyRingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B92BE6D18514B0300747094 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B92BE8918514B0300747094 /* Main_iPad.storyboard in Resources */,
+				8B92BE8E18514B0300747094 /* Images.xcassets in Resources */,
+				8B92BE8618514B0300747094 /* Main_iPhone.storyboard in Resources */,
+				8B92BE7D18514B0300747094 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B92BE9118514B0300747094 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B92BE9F18514B0300747094 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B92BE6B18514B0300747094 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B92BE8C18514B0300747094 /* ViewController.m in Sources */,
+				8B92BE8318514B0300747094 /* AppDelegate.m in Sources */,
+				8B92BE7F18514B0300747094 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B92BE8F18514B0300747094 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B92BEA118514B0300747094 /* KeyRingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B92BE9918514B0300747094 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B92BE6E18514B0300747094 /* KeyRing */;
+			targetProxy = 8B92BE9818514B0300747094 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8B92BE7B18514B0300747094 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B92BE7C18514B0300747094 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8B92BE8418514B0300747094 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B92BE8518514B0300747094 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		8B92BE8718514B0300747094 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B92BE8818514B0300747094 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		8B92BE9D18514B0300747094 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B92BE9E18514B0300747094 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8B92BEA218514B0300747094 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8B92BEA318514B0300747094 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B92BEA518514B0300747094 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KeyRing/KeyRing-Prefix.pch";
+				INFOPLIST_FILE = "KeyRing/KeyRing-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8B92BEA618514B0300747094 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KeyRing/KeyRing-Prefix.pch";
+				INFOPLIST_FILE = "KeyRing/KeyRing-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8B92BEA818514B0300747094 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KeyRing.app/KeyRing";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KeyRing/KeyRing-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "KeyRingTests/KeyRingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8B92BEA918514B0300747094 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KeyRing.app/KeyRing";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KeyRing/KeyRing-Prefix.pch";
+				INFOPLIST_FILE = "KeyRingTests/KeyRingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B92BE6A18514B0300747094 /* Build configuration list for PBXProject "KeyRing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B92BEA218514B0300747094 /* Debug */,
+				8B92BEA318514B0300747094 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B92BEA418514B0300747094 /* Build configuration list for PBXNativeTarget "KeyRing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B92BEA518514B0300747094 /* Debug */,
+				8B92BEA618514B0300747094 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B92BEA718514B0300747094 /* Build configuration list for PBXNativeTarget "KeyRingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B92BEA818514B0300747094 /* Debug */,
+				8B92BEA918514B0300747094 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B92BE6718514B0300747094 /* Project object */;
+}
