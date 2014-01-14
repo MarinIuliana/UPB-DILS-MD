@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8B92BE6E18514B0300747094"
-               BuildableName = "KeyRing.app"
-               BlueprintName = "KeyRing"
-               ReferencedContainer = "container:KeyRing.xcodeproj">
+               BlueprintIdentifier = "8BA0ED0A187B12B7004B6046"
+               BuildableName = "KeyRingX.app"
+               BlueprintName = "KeyRingX"
+               ReferencedContainer = "container:KeyRingX.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,20 +32,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8B92BE9218514B0300747094"
-               BuildableName = "KeyRingTests.xctest"
-               BlueprintName = "KeyRingTests"
-               ReferencedContainer = "container:KeyRing.xcodeproj">
+               BlueprintIdentifier = "8BA0ED2E187B12B7004B6046"
+               BuildableName = "KeyRingXTests.xctest"
+               BlueprintName = "KeyRingXTests"
+               ReferencedContainer = "container:KeyRingX.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8B92BE6E18514B0300747094"
-            BuildableName = "KeyRing.app"
-            BlueprintName = "KeyRing"
-            ReferencedContainer = "container:KeyRing.xcodeproj">
+            BlueprintIdentifier = "8BA0ED0A187B12B7004B6046"
+            BuildableName = "KeyRingX.app"
+            BlueprintName = "KeyRingX"
+            ReferencedContainer = "container:KeyRingX.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -61,10 +61,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8B92BE6E18514B0300747094"
-            BuildableName = "KeyRing.app"
-            BlueprintName = "KeyRing"
-            ReferencedContainer = "container:KeyRing.xcodeproj">
+            BlueprintIdentifier = "8BA0ED0A187B12B7004B6046"
+            BuildableName = "KeyRingX.app"
+            BlueprintName = "KeyRingX"
+            ReferencedContainer = "container:KeyRingX.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -79,10 +79,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8B92BE6E18514B0300747094"
-            BuildableName = "KeyRing.app"
-            BlueprintName = "KeyRing"
-            ReferencedContainer = "container:KeyRing.xcodeproj">
+            BlueprintIdentifier = "8BA0ED0A187B12B7004B6046"
+            BuildableName = "KeyRingX.app"
+            BlueprintName = "KeyRingX"
+            ReferencedContainer = "container:KeyRingX.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
